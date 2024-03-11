@@ -43,10 +43,24 @@ li {
   margin-bottom: 10px;
   border-radius: 4px;
   transition: background-color 0.3s ease;
+  position: relative;
+}
+
+li .fa-trash {
+  display: none;
+  cursor: pointer;
+  color: #dc3545;
+  font-size: 18px;
+  position: absolute;
+  right: 10px;
 }
 
 li:hover {
   background-color: #f8f9fa;
+}
+
+li:hover .fa-trash {
+  display: block;
 }
 
 input {
