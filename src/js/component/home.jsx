@@ -30,7 +30,11 @@ const Home = () => {
                 handleAddTask();
               }
             }}
-            placeholder="Type to add task"
+            placeholder={
+              todoItems.length === 0
+                ? "No tasks, add a task"
+                : "Type to add more tasks"
+            }
           />
         </li>
         {todoItems.map((item, index) => (
