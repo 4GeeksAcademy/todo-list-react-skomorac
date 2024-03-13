@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Analytics } from "@vercel/analytics/react"
+import { Analytics } from "@vercel/analytics/react";
 
 const Home = () => {
   const [inputValue, setInputValue] = useState("");
@@ -52,6 +52,7 @@ const Home = () => {
           </li>
         ))}
       </ul>
+      <Analytics />
     </div>
   );
 };
